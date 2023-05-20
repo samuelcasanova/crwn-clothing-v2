@@ -1,39 +1,59 @@
-# How to fork and clone
+# CRWN Clothing v2
 
-One quick note about cloning this project. If you wish to make commits and push your own code, you'll need to fork the project first. Forking allows you to have your own copy of this repository by adding a duplicate version in your own profile!
+CRWN Clothing v2 is a full-featured e-commerce application built with React, Redux, Redux Saga, Stripe, Firebase, Sass, Styled Components, Typescript, and Jest. This project was developed as part of a React course on Udemy.
 
-You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.
+## Repository URL
 
-<img width="612" alt="github fork" src="https://user-images.githubusercontent.com/10578605/157998981-4bfd1f83-825c-4664-b22d-b2c7d471dc70.png">
+[https://github.com/samuelcasanova/crwn-clothing-v2](https://github.com/samuelcasanova/crwn-clothing-v2)
 
-After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
+## Description
 
-# After you fork and clone:
+CRWN Clothing v2 is a complete e-commerce solution that allows users to browse through various product categories, add items to their cart, and complete the purchase using secure payment methods. The application provides a visually appealing and user-friendly interface to enhance the shopping experience.
 
-## Install dependencies
+## Dependencies
 
-In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+The project uses the following dependencies:
+- ![React](https://img.shields.io/badge/React-17.0.2-blue) A JavaScript library for building user interfaces.
+- ![Redux](https://img.shields.io/badge/Redux-4.1.1-purple) A predictable state container for JavaScript apps.
+- ![Redux Saga](https://img.shields.io/badge/Redux%20Saga-1.1.3-yellow) A middleware library for handling asynchronous actions in Redux.
+- ![Stripe](https://img.shields.io/badge/Stripe-8.170.0-blueviolet) A popular payment processing platform.
+- ![Firebase](https://img.shields.io/badge/Firebase-9.1.3-orange) A platform for building web and mobile applications.
+- ![Sass](https://img.shields.io/badge/Sass-1.45.0-pink) A CSS extension language that enables more powerful stylesheets.
+- ![Styled Components](https://img.shields.io/badge/Styled%20Components-5.3.0-lightgrey) A CSS-in-JS library for styling React components.
+- ![Typescript](https://img.shields.io/badge/Typescript-4.3.5-blue) A typed superset of JavaScript that compiles to plain JavaScript.
+- ![Jest](https://img.shields.io/badge/Jest-27.0.6-red) A JavaScript testing framework.
 
-## Set your firebase config
+## Installation
 
-Remember to replace the config variable in your firebase.utils.js with your own config object from the firebase dashboard! Navigate to the project settings gear icon > project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code.
+To run the CRWN Clothing v2 project locally, follow these steps:
 
-<img width="1261" alt="Screen Shot 2022-03-11 at 8 51 22 PM" src="https://user-images.githubusercontent.com/10578605/157999158-10e921cc-9ee5-46f6-a0c5-1ae5686f54f3.png">
+1. Clone the repository:
 
-# Branching strategy
-
-After forking this repository and cloning it down, you will have access to all the lesson branches with code at different checkpoints throughout the course. If for some reason you need to work from the codebase at one of these lesson branch checkpoints, follow these steps:
-
-1. Checkout to the lesson-# (let's use lesson-15 as an example) branch
-
-```
-git checkout lesson-15
-```
-
-2. Branch off from lesson-15. This will create a new branch where the code of lesson-15 is the basis for your new branch. You can name your new branch whatever you want! Let's say we use my-main-branch as the name.
-
-```
-git checkout -b my-main-branch
+```bash
+git clone https://github.com/samuelcasanova/crwn-clothing-v2.git
 ```
 
-3. Now you can just code on this branch, push code from this branch up to your forked repo etc. The main thing to remember is that you want to be on this branch for your own code, so remember what you named this branch!
+2. Navigate to the project directory:
+
+```bash
+cd crwn-clothing-v2
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+5. Open your web browser and visit `http://localhost:3000` to see the application in action.
+
+## Usage
+
+Once the project is set up and running, you can browse the different product categories, add items to the cart, and proceed to checkout using the provided payment methods. The application provides an intuitive and seamless shopping experience.
+
