@@ -6,22 +6,18 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Elements } from '@stripe/react-stripe-js';
 
 import App from './App';
-import { store, persistor } from './store/store';
-import { stripePromise } from './utils/stripe/stripe.utils';
-import * as registerServiceWorker from './serviceWorkerRegistration';
+import { store } from './store/store';
+
+import './index.scss';
 
 const rootElement = document.getElementById('root');
 
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
-          <Elements stripe={stripePromise}>
-            <App />
-          </Elements>
-        </BrowserRouter>
-      </PersistGate>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   rootElement
